@@ -39,3 +39,13 @@
 39. git checkout -f   -- to reset all unstaged modified files to last commit
 40. git config --global alias.'shortcout' 'command'    -- to create a shortcut for specific command
 
+##########
+
+HOST GITHUB REPOSITORY
+
+1. git remote add 'name' 'repo link'    --- to add new remote
+2. git remote -v    ---to see list of remote repos
+3. git fetch 'name'   ---fetching data from remote
+4. git push 'name'  'branch from which you want to push to'
+5. git pull 'name' 'brach name from which you want to pull'
+
