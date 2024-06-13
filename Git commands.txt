@@ -1,0 +1,41 @@
+1. git version  --to get the version of git
+2. git config --global user.name "Your Name"  --to set name as global 
+3. git config user.name "Your Name"  --to set username for specific repo
+4. git config --get user.name / git config user.name / git config --get --global user.name -- toget the username and same for email
+5. cd  -- to change current directory
+6. mkdir -- to make new directory
+7. pwd  -- present working directory
+8. git init -- to intitiate current directory
+9. rm -rf .git  -- to close current directory
+10. git status -- to check the status of current directory
+11. ls  -- to get the list of files
+12. git add --a  -- to stage all the files in current directory
+13. git add 'filename'  -- to add specific file
+14. git commit -m "message"  -- to commit all the files which are staged
+15. git log  -- to check the history of commit
+16. touch 'filename'  -- to create file
+17. touch .gitignore  -- to put all files or folders we want to ignore it (*.log -- to ignore all log files)
+18. /dir/ -- to ignore outer folder only , dir/  -- to ignore all dir folders
+19. git clone 'link' 'name if you want to change it' -- to import directory online
+20. cd ..  -- to navigate parent folder
+21. git diff  -- compare the working directory with staged
+22. git dif --staged  -- to compare previous commit with current staged
+23. git commit -a -m 'message'  -- commit the tracked files directly without staging (only tracked file)
+24. git rm 'filename'  -- to directly remove file from gitbash and it will automatically stage  it
+25. git mv current_name new_name  -- to rename file it will be directly staged
+26. git rm --cached 'filename'  -- to remove file after ignoring it because ignored files will be tracked until we remove them manually it will unstaged it
+27. git log --pretty  -- to arrange log
+28. git log --pretty --oneline       --arrange log in one line
+29. git log --pretty=short           --arrange log in short with author and commit  
+30. git log --pretty=full            --full info 
+31. git log --since=2.days,weeks,months,years      --get changes during specific duration
+32. git log --pretty=format:"%h -- %an"  -- to set specific format
+33. git log --author='name' --pretty=short
+34. git commit --amend   -- to modify the commit
+35. git clean -n   -- to check which file will be removed
+36. git clean -f   -- to clean files forcefuly
+37. git restore --staged 'filename'   -- to unstage a file
+38. git checkout -- 'filename'   -- to reset unstaged modified file to last commit
+39. git checkout -f   -- to reset all unstaged modified files to last commit
+40. git config --global alias.'shortcout' 'command'    -- to create a shortcut for specific command
+

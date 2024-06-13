@@ -1,0 +1,122 @@
+Here is a list of basic Git commands along with their explanations:
+
+### Configuration
+1. **`git config`**
+   - Used to set user-specific configuration values like username and email.
+   - Example: `git config --global user.name "Your Name"`
+
+### Getting & Creating Projects
+2. **`git init`**
+   - Initializes a new Git repository.
+   - Example: `git init`
+3. **`git clone`**
+   - Creates a copy of an existing repository.
+   - Example: `git clone https://github.com/user/repo.git`
+
+### Basic Snapshotting
+4. **`git add`**
+   - Adds files to the staging area.
+   - Example: `git add filename`
+5. **`git status`**
+   - Displays the state of the working directory and staging area.
+   - Example: `git status`
+6. **`git commit`**
+   - Records changes to the repository.
+   - Example: `git commit -m "Commit message"`
+7. **`git diff`**
+   - Shows changes between commits, commit and working tree, etc.
+   - Example: `git diff`
+8. **`git reset`**
+   - Resets current HEAD to the specified state.
+   - Example: `git reset --hard HEAD~1`
+9. **`git rm`**
+   - Removes files from the working directory and staging area.
+   - Example: `git rm filename`
+10. **`git mv`**
+    - Moves or renames a file, a directory, or a symlink.
+    - Example: `git mv old_filename new_filename`
+
+### Branching & Merging
+11. **`git branch`**
+    - Lists, creates, or deletes branches.
+    - Example: `git branch new_branch`
+12. **`git checkout`**
+    - Switches branches or restores working tree files.
+    - Example: `git checkout branch_name`
+13. **`git merge`**
+    - Joins two or more development histories together.
+    - Example: `git merge branch_name`
+14. **`git log`**
+    - Shows the commit logs.
+    - Example: `git log`
+15. **`git stash`**
+    - Stashes changes in a dirty working directory away.
+    - Example: `git stash`
+16. **`git stash apply`**
+    - Applies the stashed changes.
+    - Example: `git stash apply`
+
+### Sharing & Updating Projects
+17. **`git pull`**
+    - Fetches from and integrates with another repository or a local branch.
+    - Example: `git pull origin main`
+18. **`git push`**
+    - Updates remote refs along with associated objects.
+    - Example: `git push origin main`
+19. **`git fetch`**
+    - Downloads objects and refs from another repository.
+    - Example: `git fetch origin`
+
+### Inspection & Comparison
+20. **`git show`**
+    - Shows various types of objects.
+    - Example: `git show commit_hash`
+21. **`git log --oneline`**
+    - Shows commit logs with one line per commit.
+    - Example: `git log --oneline`
+22. **`git log --graph`**
+    - Shows commit logs with a graph in the terminal.
+    - Example: `git log --graph`
+23. **`git log -p`**
+    - Shows commit logs with the differences each commit introduces.
+    - Example: `git log -p`
+24. **`git diff`**
+    - Shows changes between commits, commit and working tree, etc.
+    - Example: `git diff commit_hash1 commit_hash2`
+
+### Debugging
+25. **`git bisect`**
+    - Uses binary search to find the commit that introduced a bug.
+    - Example: `git bisect start`
+26. **`git blame`**
+    - Shows what revision and author last modified each line of a file.
+    - Example: `git blame filename`
+
+### Advanced
+27. **`git cherry-pick`**
+    - Apply the changes introduced by some existing commits.
+    - Example: `git cherry-pick commit_hash`
+28. **`git rebase`**
+    - Reapplies commits on top of another base tip.
+    - Example: `git rebase branch_name`
+29. **`git tag`**
+    - Creates, lists, or deletes tags.
+    - Example: `git tag v1.0`
+
+### Remote Repositories
+30. **`git remote`**
+    - Manages set of tracked repositories.
+    - Example: `git remote add origin https://github.com/user/repo.git`
+31. **`git remote -v`**
+    - Shows URLs of remote repositories.
+    - Example: `git remote -v`
+
+### Miscellaneous
+32. **`git archive`**
+    - Creates an archive of files from a named tree.
+    - Example: `git archive --format=zip HEAD > archive.zip`
+33. **`git clean`**
+    - Removes untracked files from the working directory.
+    - Example: `git clean -fd`
+
+These commands cover the fundamental aspects of working with Git, from initial setup and basic operations to more advanced features and troubleshooting.
